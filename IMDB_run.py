@@ -25,3 +25,6 @@ with open(imdbtitles, "r") as source:
             for col_index in cols_to_remove:
                 del row[col_index]
             writer.writerow(row)
+
+for row in csvreader:
+    print(row[0], row[1], row[2], row[4], row[6])
